@@ -29,7 +29,6 @@
 		7910886218CB36240068D4C9 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7910885E18CB36240068D4C9 /* libGoogleAnalyticsServices.a */; };
 		7910886418CB36A00068D4C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7910886318CB36A00068D4C9 /* SystemConfiguration.framework */; };
 		7910886618CB36A50068D4C9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7910886518CB36A50068D4C9 /* libz.dylib */; };
-		7910886718CB36D80068D4C9 /* EXGoogleAnalyticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910883218CB2FE60068D4C9 /* EXGoogleAnalyticsManager.m */; };
 		7910886A18CB36F30068D4C9 /* EXFacebookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910886918CB36F20068D4C9 /* EXFacebookManager.m */; };
 		7913CC5818D2E308004FA426 /* UIScreen+EXKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7913CC5718D2E308004FA426 /* UIScreen+EXKit.m */; };
 		7913CE1A18D2FD40004FA426 /* EXManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7913CE1918D2FD40004FA426 /* EXManagedObject.m */; };
@@ -48,6 +47,7 @@
 		7957C06918C8372100B39D93 /* NSDictionary+EXKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7957C06818C8372100B39D93 /* NSDictionary+EXKit.m */; };
 		7957C06A18C8381400B39D93 /* NSDictionary+EXKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7957C06818C8372100B39D93 /* NSDictionary+EXKit.m */; };
 		7957C06F18C8387E00B39D93 /* EXKitNSDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7957C06E18C8387E00B39D93 /* EXKitNSDictionaryTests.m */; };
+		79827EE618D34948003FF36A /* EXGoogleAnalyticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79827EE518D34948003FF36A /* EXGoogleAnalyticsManager.m */; };
 		976C61A781BA4DA1B18F97DF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B40E71C6360E49CF8FDE191D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -85,8 +85,6 @@
 		7910882818CB237E0068D4C9 /* NSMutableArray+EXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+EXKit.h"; sourceTree = "<group>"; };
 		7910882918CB237E0068D4C9 /* NSMutableArray+EXKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+EXKit.m"; sourceTree = "<group>"; };
 		7910882D18CB2A0F0068D4C9 /* EXAppHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXAppHelperTests.m; sourceTree = "<group>"; };
-		7910883118CB2FE60068D4C9 /* EXGoogleAnalyticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXGoogleAnalyticsManager.h; sourceTree = "<group>"; };
-		7910883218CB2FE60068D4C9 /* EXGoogleAnalyticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXGoogleAnalyticsManager.m; sourceTree = "<group>"; };
 		7910885118CB36240068D4C9 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
 		7910885218CB36240068D4C9 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
 		7910885318CB36240068D4C9 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
@@ -132,6 +130,8 @@
 		7957C06718C8372100B39D93 /* NSDictionary+EXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+EXKit.h"; sourceTree = "<group>"; };
 		7957C06818C8372100B39D93 /* NSDictionary+EXKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+EXKit.m"; sourceTree = "<group>"; };
 		7957C06E18C8387E00B39D93 /* EXKitNSDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXKitNSDictionaryTests.m; sourceTree = "<group>"; };
+		79827EE418D34948003FF36A /* EXGoogleAnalyticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXGoogleAnalyticsManager.h; sourceTree = "<group>"; };
+		79827EE518D34948003FF36A /* EXGoogleAnalyticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXGoogleAnalyticsManager.m; sourceTree = "<group>"; };
 		B40E71C6360E49CF8FDE191D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA41D71E206043F08B3315B5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -270,8 +270,6 @@
 		7910883018CB2F8D0068D4C9 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
-				7910883118CB2FE60068D4C9 /* EXGoogleAnalyticsManager.h */,
-				7910883218CB2FE60068D4C9 /* EXGoogleAnalyticsManager.m */,
 				7910886818CB36F20068D4C9 /* EXFacebookManager.h */,
 				7910886918CB36F20068D4C9 /* EXFacebookManager.m */,
 			);
@@ -289,6 +287,8 @@
 		7910884F18CB36240068D4C9 /* GoogleAnalyticsServices */ = {
 			isa = PBXGroup;
 			children = (
+				79827EE418D34948003FF36A /* EXGoogleAnalyticsManager.h */,
+				79827EE518D34948003FF36A /* EXGoogleAnalyticsManager.m */,
 				7910885018CB36240068D4C9 /* GoogleAnalytics */,
 				7910885718CB36240068D4C9 /* GoogleTagManager */,
 				7910885E18CB36240068D4C9 /* libGoogleAnalyticsServices.a */,
@@ -531,7 +531,6 @@
 			files = (
 				7957C05218C770B900B39D93 /* main.m in Sources */,
 				7957C06218C772CA00B39D93 /* NSManagedObjectContext+EXKit.m in Sources */,
-				7910886718CB36D80068D4C9 /* EXGoogleAnalyticsManager.m in Sources */,
 				7910882718CB1D0E0068D4C9 /* EXAppHelper.m in Sources */,
 				7910882418CB1B700068D4C9 /* EXNavigationController.m in Sources */,
 				7957C06118C772CA00B39D93 /* NSManagedObject+EXKit.m in Sources */,
@@ -548,6 +547,7 @@
 				7957C05018C770B900B39D93 /* EXMasterViewController.m in Sources */,
 				7910882A18CB237E0068D4C9 /* NSMutableArray+EXKit.m in Sources */,
 				7913CE4418D3265D004FA426 /* UIStoryboard+EXKit.m in Sources */,
+				79827EE618D34948003FF36A /* EXGoogleAnalyticsManager.m in Sources */,
 				7910882118CB1B410068D4C9 /* EXView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
