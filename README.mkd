@@ -1,0 +1,38 @@
+# Alley-oop
+
+This repository contains the source code for the Dribbble client iOS App.
+
+
+## Release
+
+
+## Prerequisite
+
+The build requires [CocoaPods](https://github.com/cocoapods/cocoapods) and git-submodule to be installed in your development environment.
+
+```
+$ make install
+```
+
+or
+
+```
+# To install libraries from CocoaPods
+$ pod install
+
+# To install libraries from github.com (kaneshin)
+$ git submodule update --init --recursive
+```
+
+
+## Updating
+
+```
+$ make update
+```
+
+
+## Author
+
+- Shintaro Kaneko <kaneshin0120@gmail.com>
+
