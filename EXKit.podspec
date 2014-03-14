@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/kaneshin/EXKit.git", :tag => "0.0.4" }
   s.source_files = 'EXKit/**/*'
   s.frameworks = 'CoreData', 'UIKit', 'SystemConfiguration'
-  s.library = 'libz'
+  s.library = 'libz.dylib'
   s.requires_arc = true
 end
