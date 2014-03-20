@@ -23,7 +23,7 @@
 #import <Foundation/Foundation.h>
 
 NS_INLINE BOOL
-__NSStringIsValid(NSString *aString) {
+__NSStringIsEmpty(NSString *aString) {
     // At First, evaluate `NSNull' not to call an non-recognize selector like `isEqualToString:'.
     if ([aString isEqual:[NSNull null]]) {
         return YES;
@@ -36,7 +36,7 @@ __NSStringIsValid(NSString *aString) {
     }
     return NO;
 }
-#define NSStringIsValid __NSStringIsValid
+#define NSStringIsEmpty __NSStringIsEmpty
 
 @interface NSString (EXKit)
 @end

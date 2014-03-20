@@ -31,19 +31,19 @@
 {
     NSString *testString;
     testString = @".";
-    XCTAssertEqual(NO, NSStringIsValid(testString));
+    XCTAssertEqual(NO, NSStringIsEmpty(testString));
     testString = @"";
-    XCTAssertEqual(YES, NSStringIsValid(testString));
+    XCTAssertEqual(YES, NSStringIsEmpty(testString));
     testString = nil;
-    XCTAssertEqual(YES, NSStringIsValid(testString));
+    XCTAssertEqual(YES, NSStringIsEmpty(testString));
     testString = Nil;
-    XCTAssertEqual(YES, NSStringIsValid(testString));
+    XCTAssertEqual(YES, NSStringIsEmpty(testString));
     testString = NULL;
-    XCTAssertEqual(YES, NSStringIsValid(testString));
+    XCTAssertEqual(YES, NSStringIsEmpty(testString));
     testString = (NSString *)[NSNull null];
-    XCTAssertEqual(YES, NSStringIsValid(testString));
+    XCTAssertEqual(YES, NSStringIsEmpty(testString));
     testString = [NSNull null];
-    XCTAssertEqual(YES, NSStringIsValid(testString));
+    XCTAssertEqual(YES, NSStringIsEmpty(testString));
 }
 
 @end
