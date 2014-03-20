@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37D4621BDA5744AC58E109D9 /* EXKitNSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D4620ECEFD5B1E24325A9F /* EXKitNSStringTests.m */; };
+		37D4679F9364B8A5630F4F8D /* NSString+EXKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D4651A7D22916820FE464F /* NSString+EXKit.m */; };
+		37D46F1CE7DC2CBF7056CF44 /* NSString+EXKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D4651A7D22916820FE464F /* NSString+EXKit.m */; };
 		79105B7C18BF674700916DBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79105B7B18BF674700916DBD /* Foundation.framework */; };
 		79105B7E18BF674700916DBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79105B7D18BF674700916DBD /* CoreGraphics.framework */; };
 		79105B8018BF674700916DBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79105B7F18BF674700916DBD /* UIKit.framework */; };
@@ -62,6 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37D4620ECEFD5B1E24325A9F /* EXKitNSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXKitNSStringTests.m; sourceTree = "<group>"; };
+		37D4651A7D22916820FE464F /* NSString+EXKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EXKit.m"; sourceTree = "<group>"; };
+		37D46CA2D8B72D06E8856678 /* NSString+EXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EXKit.h"; sourceTree = "<group>"; };
 		79105B7818BF674700916DBD /* EXKit-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EXKit-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79105B7B18BF674700916DBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79105B7D18BF674700916DBD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -371,6 +377,8 @@
 				7957C06818C8372100B39D93 /* NSDictionary+EXKit.m */,
 				7910882818CB237E0068D4C9 /* NSMutableArray+EXKit.h */,
 				7910882918CB237E0068D4C9 /* NSMutableArray+EXKit.m */,
+				37D4651A7D22916820FE464F /* NSString+EXKit.m */,
+				37D46CA2D8B72D06E8856678 /* NSString+EXKit.h */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -392,6 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				7957C06E18C8387E00B39D93 /* EXKitNSDictionaryTests.m */,
+				37D4620ECEFD5B1E24325A9F /* EXKitNSStringTests.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -549,6 +558,7 @@
 				7913CE4418D3265D004FA426 /* UIStoryboard+EXKit.m in Sources */,
 				79827EE618D34948003FF36A /* EXGoogleAnalyticsManager.m in Sources */,
 				7910882118CB1B410068D4C9 /* EXView.m in Sources */,
+				37D46F1CE7DC2CBF7056CF44 /* NSString+EXKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +572,8 @@
 				7910882E18CB2A0F0068D4C9 /* EXAppHelperTests.m in Sources */,
 				7957C06F18C8387E00B39D93 /* EXKitNSDictionaryTests.m in Sources */,
 				7910882B18CB23BF0068D4C9 /* NSMutableArray+EXKit.m in Sources */,
+				37D4679F9364B8A5630F4F8D /* NSString+EXKit.m in Sources */,
+				37D4621BDA5744AC58E109D9 /* EXKitNSStringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,7 +731,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EXKit.app/EXKit";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EXKit-example.app/EXKit-example";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -742,7 +754,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EXKit.app/EXKit";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EXKit-example.app/EXKit-example";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
