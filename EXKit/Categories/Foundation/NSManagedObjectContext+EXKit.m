@@ -64,15 +64,31 @@ static NSString *const EXKit_NSManagedObjectContextThreadKey = @"NSManagedObject
     if (context == nil || ![context hasChanges]) {
         return YES;
     }
-    
+
     if (!isMainThread) {
-        NSManagedObjectContext *mainContext = [NSManagedObjectContext managedObjectContextForMainThread];
-        [mainContext performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:)
-                                      withObject:context
-                                   waitUntilDone:YES];
+        [[NSNotificationCenter defaultCenter] addObserver:context
+                                                 selector:@selector(managedObjectContextDidSave:)
+                                                     name:NSManagedObjectContextDidSaveNotification
+                                                   object:context];
     }
-    
-    return [context save:error];
+
+    BOOL result = [context save:error];
+
+    if (!isMainThread) {
+        [[NSNotificationCenter defaultCenter] removeObserver:context
+                                                        name:NSManagedObjectContextDidSaveNotification
+                                                      object:context];
+    }
+
+    return result;
+}
+
+- (void)managedObjectContextDidSave:(NSNotification *)notification
+{
+    NSManagedObjectContext *context = [NSManagedObjectContext managedObjectContextForMainThread];
+    [context performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:)
+                              withObject:notification
+                           waitUntilDone:YES];
 }
 
 @end
